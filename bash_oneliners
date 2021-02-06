@@ -1,0 +1,2 @@
+## check specific vuln urls of a specifi website
+for i in $(cat < vuln_urls); do echo $i; echo "...................."; curl https://example.com$i > result.txt; done;
