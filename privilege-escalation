@@ -3,3 +3,7 @@ https://johnjhacking.com/blog/linux-privilege-escalation-quick-and-dirty/
 https://gtfobins.github.io/
 
 https://www.hackingarticles.in/linux-privilege-escalation-using-suid-binaries/
+
+
+stty raw -echo
+
